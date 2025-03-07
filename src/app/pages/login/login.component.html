@@ -1,0 +1,21 @@
+<div class="container">
+  <img class="logo" src="assets/icon/favicon.png" alt="">
+  <h1>Conecte-se à sua conta do Lumo</h1>
+  <p>Entre na sua conta para aproveitar todos os recursos disponíveis do Lumo.</p>
+  <form (submit)="login()" [formGroup]="userForm">
+      <fieldset>
+        <i class="ti ti-mail"></i>
+        <input class="input-md" type="text" placeholder="Usuário" formControlName="userName">
+      </fieldset>
+      <fieldset>
+        <i width="30" class="ti ti-lock"></i>
+        <input class="input-md" type="text" placeholder="Senha" formControlName="password">
+      </fieldset>
+      <button type="submit" class="btn-primary">Entrar</button>
+      <button class="btn-secondary">Criar conta</button>
+      
+
+      <p>Esqueceu sua senha?</p>
+  </form>
+</div>
+
