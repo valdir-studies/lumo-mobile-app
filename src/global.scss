@@ -43,7 +43,9 @@
     padding: 0;
     margin: 0;
 }
-
+html.md {
+    --ion-default-font: "Public Sans", sans-serif;
+}
 body {
     color: #4B465C;
     font-family: "Public Sans", sans-serif;

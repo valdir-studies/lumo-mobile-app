@@ -7,9 +7,9 @@ export const routes: Routes = [
         component: TabsComponent,
         children: [
             {
-                path: 'dashboard',
+                path: 'explore',
                 loadComponent: () => 
-                    import('../../pages/dashboard/dashboard.component').then(m => m.DashboardComponent)
+                    import('../../pages/explore/explore.component').then(m => m.ExploreComponent)
             },
             {
                 path: 'missions',
@@ -35,7 +35,7 @@ export const routes: Routes = [
     },
     {
         path: '',
-        redirectTo: '/tabs/dashboard',
+        redirectTo: '/tabs/explore',
         pathMatch: 'full'
     }
 ]

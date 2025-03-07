@@ -3,7 +3,7 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
 import { IonInput } from '@ionic/angular/standalone';
-import { Keyboard } from '@capacitor/keyboard';
+import { Keyboard, KeyboardResize } from '@capacitor/keyboard';
 
 @Component({
   selector: 'app-login',
@@ -19,6 +19,7 @@ export class LoginComponent {
     Keyboard.addListener('keyboardDidHide', () => {
       document.body.style.marginTop = "0"
     })
+    
     Keyboard.setAccessoryBarVisible({isVisible: true})
 
   }
@@ -35,7 +36,7 @@ export class LoginComponent {
     if (this.authService.doLogin(this.userForm.value.userName, this.userForm.value.password)) {
       this.userForm.value.userName = "";
       this.userForm.value.password = "";
-      this.router.navigate(['/tabs/dashboard']);
+      this.router.navigate(['/tabs/explore']);
     } else {
       console.error("Usuário ou senha incorretos!")
     }
