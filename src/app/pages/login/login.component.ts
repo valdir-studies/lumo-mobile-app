@@ -36,7 +36,7 @@ export class LoginComponent {
     if (this.authService.doLogin(this.userForm.value.userName, this.userForm.value.password)) {
       this.userForm.value.userName = "";
       this.userForm.value.password = "";
-      this.router.navigate(['/tabs/explore']);
+      this.router.navigate(['/app/tabs/explore']);
     } else {
       console.error("Usuário ou senha incorretos!")
     }

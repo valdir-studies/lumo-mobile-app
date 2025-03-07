@@ -1,0 +1,50 @@
+ion-content::part(background) {
+    background: rgb(174,242,255);
+    background: linear-gradient(180deg,  rgba(255,255,255) 0%, rgba(174,242,255,1) 60%, rgba(0,173,233,1) 100%);
+}
+
+.wrapper-drink {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-drink button {
+    border-radius: 50px;
+    max-width: 120px;
+    color: white;
+    background-color: rgba(0,173,233,1);
+}
+.btn-cup {
+    padding: 12px;
+    color: #444 !important;
+    background-color: white !important;
+}
+.btn-cup i::before {
+    font-size: 24px;
+}
+
+.drinking-water {
+    margin-bottom: 8px;
+    font-size: 36px;
+    word-spacing: -5px;
+    text-align: center;
+}
+.drinking-water .ml {
+    font-size: 16px;
+    word-spacing: 1px;
+}
+.main-wrapper {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.main-wrapper img {
+    width: 100px;
+    margin-bottom: 24px;
+}
+.goal {
+    font-size: 18px;
+    text-align: center;
+    color: #d4d4d4;
+}

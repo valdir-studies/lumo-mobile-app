@@ -1,0 +1,20 @@
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="main-wrapper">
+    <img src="assets/icon/favicon.png" alt="">
+    <p class="drinking-water">
+      {{drinkingWater()}} <span class="ml">ml ({{percentage()}}%)</span>
+    </p>
+
+    <p class="goal">/{{goal()}}</p>
+  </div>
+  
+  <div class="wrapper-drink">
+    <button (click)="drinkWater()" class="btn-primary">Beber</button>
+    <button class="btn-cup">
+      <i class="ti ti-cup"></i>
+    </button>
+  </div>
+  <!--<button (click)="this.router.navigate(['/app/water-reminder/history'])" class="btn-primary">Histórico</button>-->
+</ion-content>
+
