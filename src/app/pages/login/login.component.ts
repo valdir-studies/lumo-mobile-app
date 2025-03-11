@@ -2,7 +2,6 @@ import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
-import { IonInput } from '@ionic/angular/standalone';
 import { Keyboard, KeyboardResize } from '@capacitor/keyboard';
 
 @Component({

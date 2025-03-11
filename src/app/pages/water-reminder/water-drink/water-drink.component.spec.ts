@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { LayoutComponent } from './layout.component';
+import { WaterDrinkComponent } from './water-drink.component';
 
-describe('LayoutComponent', () => {
-  let component: LayoutComponent;
-  let fixture: ComponentFixture<LayoutComponent>;
+describe('WaterDrinkComponent', () => {
+  let component: WaterDrinkComponent;
+  let fixture: ComponentFixture<WaterDrinkComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ LayoutComponent ],
+      declarations: [ WaterDrinkComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(LayoutComponent);
+    fixture = TestBed.createComponent(WaterDrinkComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
