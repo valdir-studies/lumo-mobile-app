@@ -5,6 +5,9 @@ const config: CapacitorConfig = {
   appName: 'Lumo',
   webDir: 'www',
   plugins: {
+    PushNotifications: {
+      presentationOptions: ["badge", "sound", "alert"]
+    },
     Keyboard: {
       resizeOnFullScreen: true,
       
