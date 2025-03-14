@@ -1,6 +1,7 @@
 import { Component, computed, inject, OnInit, signal, ViewChild } from '@angular/core';
 import { IonContent, IonModal, IonRange, IonChip, RangeCustomEvent  } from '@ionic/angular/standalone';
 import { Router } from '@angular/router';
+import { AddWaterService } from 'src/app/services/water-reminder/addWater/add-water.service';
 
 @Component({
   selector: 'app-water-main',
@@ -12,7 +13,7 @@ export class WaterMainComponent  implements OnInit {
   @ViewChild(IonModal) modal!: IonModal;
 
   router = inject(Router);
-
+  waterService = inject(AddWaterService)
   goal = signal(2800);
   drinkingWater = signal(0);
   cupCapacity = signal(300);
@@ -46,6 +47,7 @@ export class WaterMainComponent  implements OnInit {
         return v+2;
       });
     }, 1);
+   this.waterService.addWaterEntry('bmOlbZ1NwVh7YnGNzxPG', this.quantityOfWater())
    
   }
 
